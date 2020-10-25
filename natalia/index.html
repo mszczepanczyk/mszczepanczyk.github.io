@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Natalia</title>
+    <style>
+      body {
+        background-color: turquoise;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      .nat {
+        border: 1px black solid;
+      }
+    </style>
+    <script>
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      function klik() {
+        document.body.style.backgroundColor = getRandomColor();
+      }
+      // setInterval(klik, 5);
+    </script>
+  </head>
+  <body>
+    <div class="nat">Hej, jestem Natalia to moja stronka.</div>
+    <a href="#" onclick="klik();">Kliknij mnie teraz.</a>
+  </body>
+</html>
